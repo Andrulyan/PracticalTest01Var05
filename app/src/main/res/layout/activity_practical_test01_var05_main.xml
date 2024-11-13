@@ -53,12 +53,20 @@
         android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true" />
 
-    <!-- Buton pentru navigarea către SecondaryActivity -->
+    <!-- Buton pentru navigarea către PracticalTest01Var05SecondaryActivity -->
     <Button
         android:id="@+id/navigateButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Navigate to Secondary Activity"
+        android:layout_below="@id/displayTextView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp" />
+    <Button
+        android:id="@+id/verifyActivityButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Open Verify Activity"
         android:layout_below="@id/displayTextView"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp" />
