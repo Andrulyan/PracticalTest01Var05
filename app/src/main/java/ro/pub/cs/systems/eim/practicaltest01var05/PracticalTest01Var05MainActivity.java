@@ -38,4 +38,18 @@ public class PracticalTest01Var05MainActivity extends AppCompatActivity {
             startActivity(intent);
         });
     }
+    @Override
+    protected void onSaveInstanceState(Bundle outState) {
+        super.onSaveInstanceState(outState);
+        outState.putString("savedText", displayTextView.getText().toString());
+    }
+
+    @Override
+    protected void onRestoreInstanceState(Bundle savedInstanceState) {
+        super.onRestoreInstanceState(savedInstanceState);
+        if (savedInstanceState != null) {
+            displayTextView.setText(savedInstanceState.getString("savedText"));
+        }
+    }
+
 }
